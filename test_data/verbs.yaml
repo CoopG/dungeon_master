@@ -1,0 +1,18 @@
+attacks:
+  description: >
+    You are a basic fighter who likes to attack things.
+  equipment:
+    sword: 1
+  abilities:
+    - rush
+  modifiers:
+    points: 1
+    pool: might
+
+casts spells:
+  description: >
+    You are a magic user who casts spells to attack.
+  equipment:
+    spell book: 1
+  abilities:
+    - flame spell

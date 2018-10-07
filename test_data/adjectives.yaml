@@ -1,0 +1,19 @@
+kind:
+  description: >
+    You are a thoughtful character.
+  modifiers:
+    points: 2
+    pool: intellect
+  skills:
+    talk to people: trained
+  shins: 10
+
+aggressive:
+  description: >
+    You are an angry character
+  modifiers:
+    points: 2
+    pool: might
+  skills:
+    fight: trained
+  shins: 10

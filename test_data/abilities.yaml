@@ -1,0 +1,11 @@
+rush:
+  points: 1
+  pool: might
+  description: >
+    Rush at an enemy.
+
+flame spell:
+  pool: intellect
+  points: 1
+  description: >
+    You cast a jet of flame at the enemy.
