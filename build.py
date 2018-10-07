@@ -57,8 +57,11 @@ class Stats:
         modifiers = aspects['adjectives'][adjective]['modifiers']
         getattr(self, modifiers['pool']).upgrade(modifiers['points'])
 
-        modifiers = aspects['verbs'][verb]['modifiers']
-        getattr(self, modifiers['pool']).upgrade(modifiers['points'])
+        try:
+            modifiers = aspects['verbs'][verb]['modifiers']
+            getattr(self, modifiers['pool']).upgrade(modifiers['points'])
+        except KeyError:
+            pass
 
         self.might.edge = Attribute(aspects['nouns'][noun]['might']['pool'])
         self.speed.edge = Attribute(aspects['nouns'][noun]['speed']['pool'])
@@ -222,6 +225,19 @@ class PC:
                         )
                     )
                 )
+        print(*s, sep='\n')
+
+    def print_skills(self):
+        s = []
+        for skill in self.skills:
+            s.append(
+                ': '.join(
+                    (
+                        skill,
+                        self.skills[skill]
+                    )
+                )
+            )
         print(*s, sep='\n')
 
     def save(self):
