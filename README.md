@@ -6,21 +6,22 @@ based on pre-specified aspects in the test_data file.
 For example, if I wanted to create a character called Dan with a 'warrier' class, a 'kind' type and
 a job of 'attacks' I would type the following into the console:
 
-< from build import *
-< a = PC('Dan', 'warrier', 'kind', 'attacks')
+> from build import *
+
+> a = PC('Dan', 'warrier', 'kind', 'attacks')
 
 I could then check his stats by typing:
 
-< a.check_stats()
+> a.check_stats()
 
 I notice by typing
 
-< a.print_abilities()
+> a.print_abilities()
 
 that Dan has the ability 'rush' that costs 1 might point to activate.
 If I wanted to use this ability I would type
 
-< a.ability('rush')
+> a.ability('rush')
 
 and this would remove one point from my might pool.
 
