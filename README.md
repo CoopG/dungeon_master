@@ -3,12 +3,12 @@ This python project allows you to build a role playing character, choose a class
 type ('adjective'), and job ('verb') and automatically generate the correct aspects for you
 based on pre-specified aspects in the test_data file.
 
-For example, if I wanted to create a character called Dan with a 'warrier' class, a 'kind' type and
+For example, if I wanted to create a character called Dan with a 'warrior' class, a 'kind' type and
 a job of 'attacks' I would type the following into the console:
 
 > from build import *
 
-> a = PC('Dan', 'warrier', 'kind', 'attacks')
+> a = PC('Dan', 'warrior', 'kind', 'attacks')
 
 I could then check his stats by typing:
 
